@@ -1,90 +1,160 @@
-﻿body {
-    font-family: Arial, "DejaVu Serif", serif;
-    color:white;
-    background-color:black;
+﻿/* =========================
+   Simple beginner-friendly CSS
+   No @media or advanced rules
+   ========================= */
+
+/* Makes box sizing easier (padding included inside width) */
+* {
+    box-sizing: border-box;
 }
 
+/* Whole page look */
 body {
-    background-color: black;
+    margin: 0;
+    background-color: #0b0b0b;
     color: white;
-    font-family: sans-serif;
-    font-size: 16px;
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
 }
 h1{
-    text-align: center; 
+    text-align: center;
 }
 .firstTxt{
-    color:white;
-    margin:auto;
     text-align: center;
-    width:60%;
-    font-size:20px;
+    font-size:18px;
 }
-/* for the content itself */
-.dropdown {
+/* Container that holds the sections */
+.container {
+    width: 900px;      /* fixed width, simpler than responsive */
+    margin: auto;
+}
+
+/* Card = nice rounded section box */
+.card {
+    background-color: #131313;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #222;
+}
+
+/* Each player dropdown box */
+.player {
+    margin-bottom: 12px;
+}
+
+/* Title of each player (clickable) */
+summary.player-title {
     cursor: pointer;
-    font-size: 1.5rem;
-    margin-bottom: 1.6rem;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 0;
+    list-style: none;
 }
 
-/* for the border and transition */
-.dropdown {
-    border: 3px solid blue;
-    padding: 0.625rem;
-    width: 20%; /* initial width */
-    box-sizing: border-box;
-    position: relative;
-    border-radius: 5px;
-    transition: width 1s ease 0.2s;
-    overflow: hidden; /* ensures content stays inside border */
+/* Remove triangle marker */
+summary.player-title::-webkit-details-marker {
+    display: none;
 }
 
-.dropdown:hover {
-    width: 60%; /* expand on hover */
-}   
-/* dropdown content is not showing before hovering */
-.dropdown-content {
-    max-height: 0;        /* hide content */
+/* When opened, add a blue line for style */
+.player[open] {
+    border-left: 4px solid #2b84ff;
+    padding-left: 10px;
+}
+
+/* Inside area: image + text */
+.player-body {
+    display: flex;       /* side by side layout */
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Player image box */
+.player-photo {
+    width: 160px;
+    height: 120px;
+    border-radius: 8px;
     overflow: hidden;
-    display: flex;         /* text + image side by side */
-    align-items: flex-start;
-    gap: 1rem;             /* space between text and image */
-    padding: 0;            /* no padding when hidden */
-    box-sizing: border-box;
-    opacity: 0;
-    transition: max-height 0.5s ease 0.5s, opacity 0.5s ease 0.5s, padding 0.5s ease 0.5s;
-    word-wrap: break-word;
+}
+.player-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-/* show content on hover */
-.dropdown:hover .dropdown-content {
-    max-height: 30rem;     /* enough to fit content */
-    opacity: 1;
-    padding: 1.5rem;
+/* Player text */
+.player-text p {
+    margin-top: 0;
+    color: #c5c5c5;
 }
 
-/* make text take remaining space */
-.dropdown-content p {
-    flex: 1;
-    margin: 0;
+/* Stats badges (G/A/Trophies etc.) */
+.player-stats {
+    display: flex;
+    gap: 6px;
+    list-style: none;
+    padding: 0;
 }
-/* image on the right */
-.dropdown-content img {
-    width: 35%;
-    height: auto;
-    border-radius: 5px;
+.player-stats li {
+    background-color: #1d1d1d;
+    padding: 5px 8px;
+    border-radius: 6px;
+    font-size: 13px;
 }
 
+/* Table styling */
 .stats-table {
-    float:right;
-    width:40%;
-    margin:30px auto;
-    color:white;
+    width: 100%;
     border-collapse: collapse;
+    margin-top: 10px;
+    color: #d3d3d3;
 }
-.stats-table th, .stats-table td {
-    border:1px solid white;
-    padding:10px;
-    text-align:center;
+.stats-table th,
+.stats-table td {
+    border-bottom: 1px solid #333;
+    padding: 10px;
 }
-.stats-table th {background:#222;}
+.stats-table th {
+    color: white;
+}
+
+/* Honorable mentions */
+.mentions-list {
+    list-style: none;
+    padding: 0;
+}
+.mentions-list li {
+    background-color: #1c1c1c;
+    padding: 8px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+
+/* Iconic moments grid (simple block layout) */
+.moments-grid {
+    display: flex;
+    flex-wrap: wrap;          /* images wrap to next line automatically */
+    gap: 10px;
+}
+.moment {
+    width: 160px;
+}
+.moment img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.moment figcaption {
+    font-size: 12px;
+    color: #b5b5b5;
+    margin-top: 4px;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 10px;
+    color: #9e9e9e;
+}
