@@ -10,6 +10,16 @@ body {
     font-family: sans-serif;
     font-size: 16px;
 }
+h1{
+    text-align: center; 
+}
+.firstTxt{
+    color:white;
+    margin:auto;
+    text-align: center;
+    width:60%;
+    font-size:20px;
+}
 /* for the content itself */
 .dropdown {
     cursor: pointer;
@@ -30,7 +40,7 @@ body {
 }
 
 .dropdown:hover {
-    width: 80%; /* expand on hover */
+    width: 60%; /* expand on hover */
 }   
 /* dropdown content is not showing before hovering */
 .dropdown-content {
@@ -65,3 +75,16 @@ body {
     border-radius: 5px;
 }
 
+.stats-table {
+    float:right;
+    width:40%;
+    margin:30px auto;
+    color:white;
+    border-collapse: collapse;
+}
+.stats-table th, .stats-table td {
+    border:1px solid white;
+    padding:10px;
+    text-align:center;
+}
+.stats-table th {background:#222;}
