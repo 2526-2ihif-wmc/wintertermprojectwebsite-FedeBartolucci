@@ -1,9 +1,4 @@
-﻿/* =========================
-   Simple beginner-friendly CSS
-   No @media or advanced rules
-   ========================= */
-
-/* Makes box sizing easier (padding included inside width) */
+﻿/* Makes box sizing easier (padding included inside width) */
 * {
     box-sizing: border-box;
 }
@@ -41,6 +36,9 @@ h1{
 /* Each player dropdown box */
 .player {
     margin-bottom: 12px;
+}
+.meta{
+    text-align:right;
 }
 
 /* Title of each player (clickable) */
@@ -152,9 +150,3 @@ summary.player-title::-webkit-details-marker {
     margin-top: 4px;
 }
 
-/* Footer */
-.site-footer {
-    text-align: center;
-    padding: 10px;
-    color: #9e9e9e;
-}
