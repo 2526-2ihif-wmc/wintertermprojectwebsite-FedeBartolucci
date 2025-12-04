@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, "DejaVu Serif", serif;
+}
+.div1 h1{
+    text-align: center;
+    padding-bottom:20rem;
+}
+.div1{
+    height:50%;
+    width:100%;
+    color:black;
+    font-size:2rem;
+    float:left;
+    /*background-image: radial-gradient(circle, rebeccapurple,black);*/
+}

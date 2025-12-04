@@ -1,0 +1,67 @@
+﻿body {
+    font-family: Arial, "DejaVu Serif", serif;
+    color:white;
+    background-color:black;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+/* for the content itself */
+.dropdown {
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-bottom: 1.6rem;
+}
+
+/* for the border and transition */
+.dropdown {
+    border: 3px solid blue;
+    padding: 0.625rem;
+    width: 20%; /* initial width */
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 5px;
+    transition: width 1s ease 0.2s;
+    overflow: hidden; /* ensures content stays inside border */
+}
+
+.dropdown:hover {
+    width: 80%; /* expand on hover */
+}   
+/* dropdown content is not showing before hovering */
+.dropdown-content {
+    max-height: 0;        /* hide content */
+    overflow: hidden;
+    display: flex;         /* text + image side by side */
+    align-items: flex-start;
+    gap: 1rem;             /* space between text and image */
+    padding: 0;            /* no padding when hidden */
+    box-sizing: border-box;
+    opacity: 0;
+    transition: max-height 0.5s ease 0.5s, opacity 0.5s ease 0.5s, padding 0.5s ease 0.5s;
+    word-wrap: break-word;
+}
+
+/* show content on hover */
+.dropdown:hover .dropdown-content {
+    max-height: 30rem;     /* enough to fit content */
+    opacity: 1;
+    padding: 1.5rem;
+}
+
+/* make text take remaining space */
+.dropdown-content p {
+    flex: 1;
+    margin: 0;
+}
+/* image on the right */
+.dropdown-content img {
+    width: 35%;
+    height: auto;
+    border-radius: 5px;
+}
+
