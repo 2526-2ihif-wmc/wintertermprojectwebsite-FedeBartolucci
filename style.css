@@ -1,15 +1,12 @@
-body {
-    font-family: Arial, "DejaVu Serif", serif;
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg,#1e3c72 0%, #2a5298 100%);
+    color: #fff;
+    min-height: 100vh;
 }
-.div1 h1{
-    text-align: center;
-    padding-bottom:20rem;
-}
-.div1{
-    height:50%;
-    width:100%;
-    color:black;
-    font-size:2rem;
-    float:left;
-    /*background-image: radial-gradient(circle, rebeccapurple,black);*/
+
+header{
+    background:rgba(0,0,0,0.3);
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
