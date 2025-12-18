@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: Arial, sans-serif;
     background: linear-gradient(90deg,#1e3c72 0%, #2a5298 100%);
@@ -7,6 +12,16 @@ body{
 
 header{
     background:rgba(0,0,0,0.3);
-    padding: 20px;
+    padding: 15px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+.football-logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.class-welcome{
+    text-align: center;
+    padding-top: 3rem;
 }
