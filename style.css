@@ -107,3 +107,94 @@ header{
     cursor:pointer;
 }
 
+
+.content2 {
+    padding: 5rem 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.stats-section {
+    max-width: 70rem;
+    margin: 4rem auto;
+    padding: 2.5rem 1.2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.stats-section h2 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2rem;
+}
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1.9rem;
+    border-radius: 15px;
+    text-align: center;
+    border: 3px solid #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2a5298;
+    margin-bottom: 0.6rem;
+}
+
+.stat-label {
+    font-size: 16px;
+    color: #555;
+}
+
+.about {
+    max-width: 50rem;
+    background: #ffffff;
+    border: 2px solid #7c7a7a;
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 1.5rem;
+    color: #2a5298;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+    color: #818181;
+}
+.about h3{
+    margin-top: 6rem;
+    margin-bottom: 1.2rem;
+    text-align: left;
+    font-size: 20px;
+    color: #2a5298;
+}
+
+.about ul li{
+    text-align: left;
+    list-style-type:none;
+    margin-top:0.5rem;
+    font-size: 1.2rem;
+    color: #818181;
+}
+.about:hover{
+    transform: translateY(-10px) rotate(2deg);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
