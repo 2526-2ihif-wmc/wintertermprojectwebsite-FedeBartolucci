@@ -158,8 +158,32 @@ body::before {
     color: #666;
     font-size: 14px;
 }
-
+.stats-comparison {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 40px;
+    border: 3px solid #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    color: #333;
+}
 .comparison-table{
     width: 100%;
     border-collapse: collapse;
+}
+.comparison-table th{
+    background: #1e3c72;
+    color: #fff;
+    padding:0.8rem;
+    text-align:left;
+    font-size:16px;
+}
+.comparison-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+
+.comparison-table tr:hover {
+    background: rgba(30, 60, 114, 0.05);
 }
