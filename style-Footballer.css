@@ -158,3 +158,8 @@ body::before {
     color: #666;
     font-size: 14px;
 }
+
+.comparison-table{
+    width: 100%;
+    border-collapse: collapse;
+}
