@@ -148,3 +148,13 @@ body::before {
     border-left:4px solid #1e3c72;
     width:33.33%
 }
+.mentions-table h3 {
+    color: #1e3c72;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.mentions-table p {
+    color: #666;
+    font-size: 14px;
+}
