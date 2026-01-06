@@ -1,153 +1,150 @@
-﻿* {
+﻿*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    margin: 0;                       /* remove browser default page margin */
-    background-color: #0b0b0b;       /* page background color */
-    color: #ffffff;                  /* default text color */
-    font-family: Arial, sans-serif;  /* choose a simple font */
-    line-height: 1.4;                /* space between lines for readability */
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 100vh;
 }
-
-
-h1 {
-    text-align: center;
-    margin-top: 18px;
-}
-
-
-.firstTxt {
-    text-align: center;
-    font-size: 18px;
-    width: 70%;            /* how wide the paragraph is */
-    margin: 8px auto 18px; /* center it with automatic left/right margins */
-    color: #d1d1d1;
-}
-
-.container {
-    width: 80%;                  /* how much of the browser width used*/
-    margin: 30px auto;          
-    display: flex;               /* place children in a row */
-    justify-content: center;     /* center the row contents horizontally */
-    align-items: flex-start;     /* align top edges */
-    gap:20px;
-}
-
-.card {
-    background-color: #303030;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #222;
-    width: 50%;                  /* make the footballers area wider */
-    box-sizing: border-box;               /* how wide the card is inside the container */
-}
-
-.player {
-    margin-bottom: 12px;
-}
-
-/* meta text on the right of the summary */
-.meta {
-    text-align: right;      /* pushes text inside that span to the right */
-    color: #bfc8cf;
-}
-
-/* Summary (clickable title) */
-summary.player-title {
-    cursor: pointer;        /* shows a pointer so users know it's clickable */
-    font-weight: bold;
-    font-size: 18px;
-    display: flex;;
-    padding: 6px 0;
-    list-style: none;       /* removes default bullet/marker */
-    color: #ffffff;
-}
-
-/* remove the default triangle/marker in some browsers */
-summary.player-title::-webkit-details-marker {
-    display: none;
-}
-
-/* When details is open, style the block (visual hint) */
-.player[open] {
-    border-left: 4px solid #2b84ff;  /* bar left*/
-    padding-left: 10px;              /* move content a bit so text doesn't touch the line */
-}
-
-.player-body {
-    display: flex; /* side-by-side layout */
-    gap: 12px;
-    margin-top: 10px;
-    align-items: flex-start;
-}
-
-
-.player-photo {
-    width: 15rem;          
-    height: 10rem;
-    border-radius: 8px;
-    overflow: hidden;       /* crop any image that is bigger than the box */
-    flex: 0 0 15rem;        /* do not grow or shrink; keep fixed width in the flex row */
-    border: 1px solid #222;
-    background-color: #0b0b0b;
-}
-
-/* The image inside the box */
-.player-photo img {
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;      /* makes image fill the box while keeping aspect ratio (crops if necessary) */
-    display: block;
+    background-image:
+            repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 48%,
+                    rgba(255, 255, 255, 0.05) 48%,
+                    rgba(255, 255, 255, 0.05) 52%,
+                    transparent 52%,
+                    transparent 100%
+            );
+    background-size: 150px 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+.football-logo{
+    font-size:30px;
+    font-weight: bold;
+    color: #ffd700;
+}
+.container{
+    text-align:center;
 }
 
-.player-text p {
-    margin: 0 0 10px 0;
-    color: #c5c5c5;         /* softer color for paragraph text */
-    font-size: 15px;
+.container h1{
+    margin: 2rem auto;
+    font-size: 50px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
 }
-/* Stats badges inline */
-.player-stats {
-    display: flex;          /* shows badges in a row */
-    gap: 8px;
-    list-style: none;       /* remove default bullets */
-    padding: 0;
-    margin: 0;
+
+.container p{
+    font-size: 20px;
 }
-.player-stats li {
-    background-color: #1d1d1d;
-    padding: 6px 8px;
-    border-radius: 6px;
-    font-size: 13px;
-    color: #ffffff;
+.section{
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
-.sidebar {
-    width: 30%; 
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #222;
-    background-color: #303030;
-    box-sizing: border-box;
-    margin: 0;/* remove margin:auto so it stays aligned inside the flex row */
+
+.players-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
-/* small helper so the stats block inside sidebar sits nicely */
+.player-card {  /* Changed from .players-card */
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 25px;
+    border: 3px solid #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    color: #333;
+    position: relative;
+    z-index: 2;
+}
+
+.player-card:hover {
+    transform: scale(1.05) translateZ(0);;
+}
+
+.player-card h2 {
+    color: #1e3c72;  /* Blue to match your theme */
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.player-info {
+    margin: 15px 0;
+}
+
+.player-info p {
+    margin: 8px 0;
+    line-height: 1.6;
+    color: #555;
+}
+
+.player-info strong {
+    color: #1e3c72;
+}
+
 .stats {
-    margin: 0 auto;
-    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #1e3c72;
 }
 
-/* table styling (keeps your existing look) */
-.stats-table {
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1e3c72;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.honorable-mentions{
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 2rem;
+    margin:3rem;
+    border: 3px solid #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    color:#333
+}
+.honorable-mentions h2{
+    color: #1e3c72;
+    font-size: 32px;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+.mentions-table{
     width: 100%;
-    border-collapse: collapse;
-    color: #d3d3d3;
+    border-collapse: separate;
+    border-spacing: 1.25rem;
 }
-.stats-table th,
-.stats-table td {
-    border-bottom: 1px solid #333;
-    padding:4px;
-    text-align: left;
-}
-.stats-table th {
-    color: #ffffff;
+.mentions-table td{
+    padding: 0.8rem;
+    background:rgba(30,60,114,0.05);
+    border-radius:0.6rem;
+    border-left:4px solid #1e3c72;
+    width:33.33%
 }
