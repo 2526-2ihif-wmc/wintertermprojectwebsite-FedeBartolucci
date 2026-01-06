@@ -158,7 +158,8 @@ body::before {
     color: #666;
     font-size: 14px;
 }
-.stats-comparison {
+.career-stats {
+    margin-top: 2rem;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
     padding: 30px;
