@@ -52,6 +52,51 @@ h1 {
     margin-bottom: 20px;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
 }
+
+.intro {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+/* Origins Section */
+.origins-section {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 40px;
+    margin-bottom: 40px;
+    border: 3px solid #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    color: #333;
+}
+
+.origins-section h2 {
+    color: #1e3c72;
+    font-size: 36px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.origins-content {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.origins-icon {
+    font-size: 100px;
+    min-width: 120px;
+    text-align: center;
+}
+
+.origins-text p {
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Timeline */
 .timeline {
     position: relative;
     padding: 40px 0;
@@ -156,4 +201,96 @@ h1 {
 
 .evolution-card p {
     line-height: 1.6;
+}
+
+/* Key Moments Grid */
+.moments-section {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 40px;
+    margin-bottom: 40px;
+    border: 3px solid #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    color: #333;
+}
+
+.moments-section h2 {
+    color: #1e3c72;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.moments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.moment-card {
+    background: rgba(30, 60, 114, 0.05);
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 5px solid #1e3c72;
+}
+
+.moment-card h3 {
+    color: #1e3c72;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.moment-year {
+    color: #2a5298;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.moment-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Impact Section */
+.impact-section {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 40px;
+    margin-bottom: 40px;
+    border: 3px solid #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    color: #333;
+}
+
+.impact-section h2 {
+    color: #1e3c72;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.stat-box {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 16px;
 }
