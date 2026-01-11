@@ -54,6 +54,7 @@ body::before {
 
 
 .content1{
+    margin-left:10rem;
     padding: 6rem 10rem;
     display:flex;
     flex-direction:row;
