@@ -10,27 +10,7 @@ body{
     color: #fff;
     min-height: 100vh;
 }
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image:
-            repeating-linear-gradient(
-                    90deg,
-                    transparent,
-                    transparent 48%,
-                    rgba(255, 255, 255, 0.05) 48%,
-                    rgba(255, 255, 255, 0.05) 52%,
-                    transparent 52%,
-                    transparent 100%
-            );
-    background-size: 150px 100%;
-    pointer-events: none;
-    z-index: 1;
-}
+
 .football-logo{
     font-size: 28px;
     font-weight: bold;
@@ -41,13 +21,13 @@ body::before {
 }
 .carousel-img {
     height: 30rem;
-    object-fit: cover; /* prevents stretching */
-    border-radius: 15px; /* rounded corners */
+    object-fit: cover;
+    border-radius: 15px;
 }
 
 .carousel-inner {
     border-radius: 15px;
-    overflow: hidden; /* keeps corners clean */
+    overflow: hidden;
 }
 
 .carousel-caption {
@@ -58,13 +38,15 @@ body::before {
 .trophies-grid {
     margin: 0 auto;
     margin-top: 4rem;
-    width:65%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
 }
 
 .trophy-card {
+    flex: 1 1 350px;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
     padding: 30px;
@@ -161,12 +143,14 @@ body::before {
 }
 
 .facts-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:1.25rem;
 }
 
 .fact-box {
+    flex:1 1 25rem;
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
     padding: 25px;
