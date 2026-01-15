@@ -46,7 +46,6 @@ h1 {
 .timeline-line {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
     width: 0.25rem;
     height: 100%;
     background: rgba(255, 255, 255, 0.5);
