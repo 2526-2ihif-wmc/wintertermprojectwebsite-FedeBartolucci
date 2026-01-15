@@ -35,7 +35,7 @@ body{
     border-radius: 10px;
     padding: 10px;
 }
-.trophies-grid {
+.trophies-flex {
     margin: 0 auto;
     margin-top: 4rem;
     width: 65%;
@@ -64,24 +64,24 @@ body{
 .trophy-icon {
     font-size: 70px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.3rem;
 }
 
 .trophy-card h2 {
     color: #1e3c72;
     font-size: 28px;
-    margin-bottom: 15px;
+    margin-bottom: 1.12rem;
     text-align: center;
 }
 
 .trophy-info {
-    margin: 20px 0;
+    margin: 1.3rem 0;
 }
 
 .info-row {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 0.6rem 0;
     border-bottom: 2px solid #e0e0e0;
 }
 
@@ -96,7 +96,7 @@ body{
 }
 
 .description {
-    margin-top: 20px;
+    margin-top: 1.3rem;
     line-height: 1.8;
     color: #555;
 }
@@ -112,7 +112,7 @@ body{
 .recent-winners h3 {
     color: #1e3c72;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 0.6rem;
 }
 
 .recent-winners ul {
