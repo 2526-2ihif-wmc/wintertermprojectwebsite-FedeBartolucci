@@ -38,43 +38,6 @@ h1 {
     line-height: 1.6;
 }
 
-
-.origins-section {
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 15px;
-    padding: 2.5rem;
-    margin-bottom: 2.5rem;
-    border: 3px solid #fff;
-    box-shadow: 0 0.3125rem 1.25rem rgba(0, 0, 0, 0.3);
-    color: #333;
-}
-
-.origins-section h2 {
-    color: #1e3c72;
-    font-size: 36px;
-    margin-bottom: 1.5625rem;
-    text-align: center;
-}
-
-.origins-content {
-    display: flex;
-    gap: 1.875rem;
-    align-items: center;
-}
-
-.origins-icon {
-    font-size: 100px;
-    min-width: 7.5rem;
-    text-align: center;
-}
-
-.origins-text p {
-    line-height: 1.8;
-    color: #555;
-    margin-bottom: 0.9375rem;
-}
-
-
 .timeline {
     position: relative;
     padding: 2.5rem 0;
@@ -111,12 +74,12 @@ h1 {
     transform: translateX(-50%);
     background: #fff;
     color: #1e3c72;
-    padding: 0.625rem 1.25rem;
+    padding: 0.6rem 1.25rem;
     border-radius: 25px;
     font-weight: bold;
     font-size: 18px;
     z-index: 2;
-    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .content {
@@ -124,7 +87,7 @@ h1 {
     padding: 1.5625rem;
     border-radius: 15px;
     border: 3px solid #fff;
-    box-shadow: 0 0.3125rem 1.25rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
     margin-top: 3.125rem;
     color: #333;
 }
@@ -146,7 +109,7 @@ h1 {
     padding: 2.5rem;
     margin-bottom: 2.5rem;
     border: 3px solid #fff;
-    box-shadow: 0 0.3125rem 1.25rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
     color: #333;
 }
 
@@ -211,7 +174,7 @@ h1 {
 .moment-card {
     flex: 1 1 25rem;
     background: rgba(30, 60, 114, 0.05);
-    padding: 1.5625rem;
+    padding: 1.6rem;
     border-radius: 15px;
     border-left: 5px solid #1e3c72;
 }
@@ -219,14 +182,14 @@ h1 {
 .moment-card h3 {
     color: #1e3c72;
     font-size: 22px;
-    margin-bottom: 0.625rem;
+    margin-bottom: 0.6rem;
 }
 
 .moment-year {
     color: #2a5298;
     font-weight: bold;
     font-size: 18px;
-    margin-bottom: 0.625rem;
+    margin-bottom: 0.6rem;
 }
 
 .moment-card p {
