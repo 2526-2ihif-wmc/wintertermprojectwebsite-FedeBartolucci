@@ -43,8 +43,7 @@ h1 {
     padding: 2.5rem 0;
 }
 
-.timeline::before {
-    content: '';
+.timeline-line {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -116,7 +115,7 @@ h1 {
 .evolution-section h2 {
     color: #1e3c72;
     font-size: 32px;
-    margin-bottom: 1.875rem;
+    margin-bottom: 1.9rem;
     text-align: center;
 }
 
@@ -132,14 +131,14 @@ h1 {
     flex: 1 1 15.625rem;
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
-    padding: 1.5625rem;
+    padding: 1.56rem;
     border-radius: 15px;
     text-align: center;
 }
 
 .evolution-card h3 {
     font-size: 24px;
-    margin-bottom: 0.9375rem;
+    margin-bottom: 1rem;
 }
 
 .evolution-card p {
@@ -153,20 +152,20 @@ h1 {
     padding: 2.5rem;
     margin-bottom: 2.5rem;
     border: 3px solid #fff;
-    box-shadow: 0 0.3125rem 1.25rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
     color: #333;
 }
 
 .moments-section h2 {
     color: #1e3c72;
     font-size: 32px;
-    margin-bottom: 1.875rem;
+    margin-bottom: 1.9rem;
     text-align: center;
 }
 .moments-flex {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5625rem;
+    gap: 1.6rem;
     justify-content: center;
 }
 
@@ -204,7 +203,7 @@ h1 {
     padding: 2.5rem;
     margin-bottom: 2.5rem;
     border: 3px solid #fff;
-    box-shadow: 0 0.3125rem 1.25rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
     color: #333;
 }
 
@@ -233,7 +232,7 @@ h1 {
 .stat-number {
     font-size: 42px;
     font-weight: bold;
-    margin-bottom: 0.625rem;
+    margin-bottom: 0.6rem;
 }
 
 .stat-label {
